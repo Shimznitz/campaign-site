@@ -1,0 +1,115 @@
+/* components/Testimonials.module.css */
+
+.section {
+  background: var(--white);
+  padding: 100px 40px;
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.card {
+  background: var(--bg);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius-lg);
+  padding: 48px 52px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.quoteIcon {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  line-height: 0.6;
+  color: var(--yellow);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.quote {
+  font-size: 1.08rem;
+  color: var(--text);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.authorAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.authorName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.authorRole {
+  font-size: 0.82rem;
+  color: var(--text3);
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gray-2);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  padding: 0;
+}
+
+.dot:hover {
+  background: var(--gray-3);
+}
+
+.activeDot {
+  background: var(--green);
+  transform: scale(1.25);
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+  .card {
+    padding: 32px 28px;
+  }
+}

@@ -1,0 +1,221 @@
+/* components/About.module.css */
+
+.section {
+  background: var(--white);
+  padding: 100px 40px;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 72px;
+}
+
+/* Profile Grid */
+.profileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.profileImageWrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 500px;
+  box-shadow: var(--shadow-lg);
+}
+
+.imageAccent {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  width: 80px;
+  height: 80px;
+  background: var(--yellow);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.profileName {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.profileTitle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.profileBio {
+  font-size: 1rem;
+  color: var(--text2);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text2);
+  border: 1px solid var(--gray-2);
+}
+
+.highlightIcon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Timeline */
+.timelineHeader {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--green), rgba(44,132,46,0.1));
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  width: 46%;
+  margin-bottom: 48px;
+}
+
+.timelineItem.left {
+  margin-right: auto;
+  padding-right: 48px;
+}
+
+.timelineItem.right {
+  margin-left: auto;
+  padding-left: 48px;
+}
+
+.timelineCard {
+  background: var(--bg);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.timelineCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.dot {
+  position: absolute;
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(44,132,46,0.2);
+}
+
+.timelineItem.left .dot {
+  right: -7px;
+}
+.timelineItem.right .dot {
+  left: -7px;
+}
+
+.year {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  background: rgba(44,132,46,0.08);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.timelineTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-family: 'Inter', sans-serif;
+}
+
+.timelineDesc {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .profileGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .profileImageWrap {
+    height: 380px;
+  }
+
+  .timelineLine {
+    left: 20px;
+  }
+
+  .timelineItem {
+    width: calc(100% - 48px);
+    margin-left: 48px !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .dot {
+    left: -34px !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+}

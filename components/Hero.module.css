@@ -1,0 +1,171 @@
+/* components/Hero.module.css */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.imageBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    110deg,
+    rgba(20, 60, 22, 0.88) 0%,
+    rgba(20, 60, 22, 0.75) 40%,
+    rgba(20, 60, 22, 0.20) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 100px;
+}
+
+.textBlock {
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 20px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 225, 0, 0.35);
+  border-radius: 50px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.quote {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  max-width: 520px;
+  border-left: 3px solid var(--yellow);
+  padding-left: 20px;
+}
+
+.subQuote {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 44px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--yellow);
+  color: var(--text);
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(255, 225, 0, 0.4);
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: white;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.scrollLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.scrollDot {
+  width: 6px;
+  height: 6px;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 100px 24px 80px;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

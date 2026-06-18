@@ -1,0 +1,100 @@
+/* components/Countdown.module.css */
+
+.section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1501139083538-0139583c060f?w=1600&q=80') center/cover no-repeat;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 60, 22, 0.92);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: white;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.unit {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  padding: 28px 36px;
+  min-width: 130px;
+  backdrop-filter: blur(4px);
+}
+
+.value {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1;
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.unitLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.cta {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+  .unit {
+    min-width: 100px;
+    padding: 20px 20px;
+  }
+}

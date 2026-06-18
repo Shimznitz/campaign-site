@@ -1,0 +1,131 @@
+/* components/News.module.css */
+
+.section {
+  background: var(--bg);
+  padding: 100px 40px;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 56px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid var(--gray-2);
+  padding-left: 36px;
+  margin-left: 28px;
+}
+
+.item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--gray-1);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: -43px;
+  top: 36px;
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(44,132,46,0.15);
+}
+
+.dateBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius-sm);
+  padding: 10px 8px;
+  height: fit-content;
+  box-shadow: var(--shadow-sm);
+}
+
+.day {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--green);
+  line-height: 1;
+}
+
+.month {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text3);
+}
+
+.year2 {
+  font-size: 0.68rem;
+  color: var(--text3);
+  margin-top: 2px;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: rgba(44,132,46,0.08);
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.itemTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+.itemExcerpt {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+  .item {
+    grid-template-columns: 1fr;
+  }
+  .dateBadge {
+    flex-direction: row;
+    gap: 8px;
+    width: fit-content;
+  }
+}

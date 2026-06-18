@@ -1,0 +1,165 @@
+/* components/Gallery.module.css */
+
+.section {
+  background: var(--white);
+  padding: 100px 40px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filterBtn {
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1.5px solid var(--gray-2);
+  background: none;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterBtn:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.filterBtn.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+.masonry {
+  columns: 3;
+  column-gap: 18px;
+}
+
+.masonryItem {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 18px;
+  break-inside: avoid;
+  cursor: pointer;
+  height: 240px;
+}
+
+.masonryItem:nth-child(3n + 1) {
+  height: 300px;
+}
+
+.masonryItem:nth-child(3n + 2) {
+  height: 220px;
+}
+
+.masonryOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.masonryItem:hover .masonryOverlay {
+  opacity: 1;
+}
+
+.masonryCategory {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 4px;
+}
+
+.masonryAlt {
+  font-size: 0.88rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.lightboxContent {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+}
+
+.lightboxCaption {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.lightboxClose:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+  .masonry {
+    columns: 1;
+  }
+  .masonryItem {
+    height: 260px !important;
+  }
+}

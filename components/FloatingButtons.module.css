@@ -1,0 +1,120 @@
+/* components/FloatingButtons.module.css */
+
+/* --- Sticky Join Us Button --- */
+.stickyJoin {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%); /* Base centering overridden smoothly by Framer Motion */
+  z-index: 999;
+  background: var(--yellow);
+  color: var(--text, #111);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stickyJoin:hover {
+  transform: translateX(-50%) translateY(-2px) !important; /* Forces layout stability alongside Framer Motion */
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25), 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.stickyJoin:active {
+  transform: translateX(-50%) translateY(1px) !important;
+}
+
+/* --- Floating Action Buttons (FAB Container) --- */
+.fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* --- Base Style for Rounded Actions --- */
+.waBtn,
+.contactBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.waBtn:hover,
+.contactBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.waBtn:active,
+.contactBtn:active {
+  transform: translateY(-1px);
+}
+
+/* --- Specific Button Overrides --- */
+.waBtn {
+  background: #25D366; /* Official WhatsApp Color */
+  color: white;
+}
+
+.contactBtn {
+  background: var(--green);
+  color: white;
+}
+
+/* --- Responsive Layout Rules --- */
+@media (max-width: 640px) {
+  /* Push sticky button down on mobile viewports for clean navigation thumb zones */
+  .stickyJoin {
+    bottom: 16px;
+    width: calc(100% - 32px); /* Spans the screen width nicely */
+    max-width: 340px;
+    font-size: 0.9rem;
+    padding: 12px 24px;
+  }
+
+  /* Shift the floating icon buttons up slightly on mobile so they clear the full-width join button */
+  .fab {
+    bottom: 84px;
+    right: 16px;
+    gap: 10px;
+  }
+
+  .waBtn,
+  .contactBtn {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .waBtn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .contactBtn svg {
+    width: 19px;
+    height: 19px;
+  }
+}
