@@ -15,7 +15,7 @@ export const CAMPAIGN = {
     quote: "Taraba needs leadership that turns promises into progress.",
     subQuote: "A new dawn for our people — built on integrity, vision, and action.",
     heroImage: "/images/Danjuma_Shiddi_1.jpg",
-    profileImage: "/images/Danjuma_Shiddi_4.jpg",
+    profileImage: "/images/Danjuma_Shiddi_5.jpg",
     electionDate: "2027-02-06T00:00:00",
   },
 
@@ -162,19 +162,19 @@ I have spent my career building hospitals, schools, and businesses. I know what 
   gallery: [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+      src: "/images/gen/rally1.jpg",
       alt: "Community stakeholders meeting in Jalingo",
       category: "Townhall",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80",
+      src: "/images/gen/rally2.jpg",
       alt: "Consultations with grassroots community leaders",
       category: "Grassroots",
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+      src: "/images/gen/rally1.jpg",
       alt: "APGA flagbearer affirmation campaign rally",
       category: "Rally",
     },
