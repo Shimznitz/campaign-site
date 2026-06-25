@@ -198,8 +198,8 @@ I have spent my career building hospitals, schools, and businesses. I know what 
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
-      alt: "Community health outreach",
+      src: "/images/cert_of_return.png",
+      alt: "Danji SS Receives certificate of return",
       category: "Community",
     },
     {
