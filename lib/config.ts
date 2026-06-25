@@ -14,8 +14,8 @@ export const CAMPAIGN = {
     partyShort: "APGA",
     quote: "Taraba needs leadership that turns promises into progress.",
     subQuote: "A new dawn for our people — built on integrity, vision, and action.",
-    heroImage: "/images/Danjuma_Shiddi_1.jpg",
-    profileImage: "/images/Danjuma_Shiddi_5.jpg",
+    heroImage: "/images/1.jpg",
+    profileImage: "/images/9.jpg",
     electionDate: "2027-02-06T00:00:00",
   },
 
@@ -180,21 +180,21 @@ I have spent my career building hospitals, schools, and businesses. I know what 
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&q=80",
-      alt: "Youth engagement forum",
-      category: "Youth",
+      src: "https://thepalacenews.com/wp-content/uploads/2026/06/IMG-20260625-WA0000.jpg",
+      alt: "APGA’s Shiddi Bags 2026 Humanitarian Personality Award",
+      category: "Award",
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1559024094-4a1e4495c3c1?w=800&q=80",
-      alt: "Development project inspection",
-      category: "Development",
+      src: "https://thenewspointer.com.ng/wp-content/uploads/2026/06/Polish_20260613_203405449-2048x1251.jpg",
+      alt: "2027: Supporters Canvass Votes for Danji SS, Cite Transformation, Leadership Agenda in Taraba",
+      category: "Rally",
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80",
-      alt: "Leadership summit",
-      category: "Meetings",
+      src: "https://thepalacenews.com/wp-content/uploads/2026/05/IMG-20260509-WA0009.jpg",
+      alt: "Danji SS Enters Taraba Governorship Race, Declares State “Needs Results, Not Excuses”",
+      category: "Party",
     },
     {
       id: 7,
@@ -217,6 +217,22 @@ I have spent my career building hospitals, schools, and businesses. I know what 
   ],
 
     news: [
+    {
+      id: 7,
+      date: "2026-06-25",
+      category: "Press Release",
+      title: "World Widows Day: APGA’s Shiddi Bags 2026 Humanitarian Personality Award",
+      excerpt:
+        "Hon. Danjuma Usman Shiddi, the APGA governorship candidate in Taraba State, has been honoured with the “Most Humanitarian Personality of the Year 2026” award at the World Widows Day commemoration organised by the International Association of World Peace Advocacy Network (IAWPA).",
+    },
+    {
+      id: 6,
+      date: "2026-06-25",
+      category: "Endorsement",
+      title: "2027: Supporters Canvass Votes for Danji SS, Cite Transformation, Leadership Agenda in Taraba",
+      excerpt:
+        "Supporters of the governorship ambition of Hon. Danjuma Usman Shiddi (Danji SS) have intensified calls on residents of Taraba State to support his candidature ahead of the 2027 general election under the platform of the All Progressives Grand Alliance (APGA).",
+    },
     {
       id: 1,
       date: "2026-05-28",
