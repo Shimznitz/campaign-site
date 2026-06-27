@@ -1,0 +1,531 @@
+/* app/admin/admin.module.css */
+
+/* ── Login ───────────────────────────────────────────────── */
+.loginWrap {
+  min-height: 100vh;
+  background: #0d1a0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.loginCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+
+.loginLogo {
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+}
+
+.loginTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #181818;
+  margin: 0;
+}
+
+.loginSub {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.loginInput {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.loginInput:focus {
+  border-color: #2c842e;
+}
+
+.loginError {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.loginBtn {
+  width: 100%;
+  background: #2c842e;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+
+.loginBtn:hover {
+  background: #1e5c20;
+}
+
+/* ── Shell ───────────────────────────────────────────────── */
+.wrap {
+  min-height: 100vh;
+  background: #f4f6f4;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+.header {
+  background: #1e5c20;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+}
+
+.headerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.headerSub {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  letter-spacing: 0.06em;
+}
+
+.headerStats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statPill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 6px 16px;
+}
+
+.statNum {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffe100;
+  line-height: 1;
+}
+
+.statLbl {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.logoutBtn {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logoutBtn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ── Body ────────────────────────────────────────────────── */
+.body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* ── Tabs ────────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 1.5px solid #d0d0d0;
+  background: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #2c842e;
+  color: #2c842e;
+}
+
+.activeTab {
+  background: #2c842e;
+  border-color: #2c842e;
+  color: white;
+}
+
+.badge {
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.activeTab .badge {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ── Toolbar ─────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search {
+  flex: 1;
+  padding: 11px 16px;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.search:focus {
+  border-color: #2c842e;
+}
+
+.refreshBtn {
+  padding: 11px 20px;
+  background: white;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.refreshBtn:hover {
+  border-color: #2c842e;
+  color: #2c842e;
+}
+
+.loading {
+  text-align: center;
+  color: #888;
+  padding: 40px;
+  font-size: 0.95rem;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+  padding: 60px 20px;
+  font-size: 0.95rem;
+}
+
+/* ── List ────────────────────────────────────────────────── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Message cards ───────────────────────────────────────── */
+.card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+.cardOpen {
+  border-color: #2c842e;
+  box-shadow: 0 4px 20px rgba(44,132,46,0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.cardLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #2c842e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.avatarGreen {
+  background: #1e5c20;
+}
+
+.cardName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #181818;
+  margin: 0 0 3px;
+}
+
+.cardMeta {
+  font-size: 0.78rem;
+  color: #888;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.subject {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 500;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chevron {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.cardBody {
+  border-top: 1px solid #f0f0f0;
+  padding: 20px;
+}
+
+.messageBox {
+  background: #f7f9f7;
+  border-left: 3px solid #2c842e;
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.messageText {
+  font-size: 0.93rem;
+  color: #333;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.cardActions {
+  display: flex;
+  gap: 10px;
+}
+
+.replyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 20px;
+  background: #2c842e;
+  color: white;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.replyBtn:hover {
+  background: #1e5c20;
+}
+
+/* ── Supporter cards ─────────────────────────────────────── */
+.breakdown {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.breakdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 14px 24px;
+  min-width: 100px;
+}
+
+.breakdownNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #2c842e;
+  line-height: 1;
+}
+
+.breakdownLbl {
+  font-size: 0.72rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.supporterCard {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.supporterCard:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+.supporterLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.supporterRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.interestTag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #e8f5e9;
+  color: #2c842e;
+}
+
+.tag_volunteer { background: #e3f2fd; color: #1565c0; }
+.tag_donor { background: #fff8e1; color: #f57f17; }
+.tag_media { background: #f3e5f5; color: #6a1b9a; }
+
+.supporterContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.waLink, .emailLink {
+  font-size: 0.78rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.waLink:hover { color: #25d366; }
+.emailLink:hover { color: #2c842e; }
+
+.joinDate {
+  font-size: 0.72rem;
+  color: #aaa;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .header { padding: 0 16px; }
+  .headerStats { gap: 8px; }
+  .statPill { padding: 4px 10px; }
+  .body { padding: 20px 16px; }
+  .supporterCard { flex-direction: column; }
+  .supporterRight { align-items: flex-start; }
+  .cardRight { flex-direction: column; align-items: flex-end; gap: 6px; }
+  .subject { max-width: 140px; }
+}

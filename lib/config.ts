@@ -20,10 +20,10 @@ export const CAMPAIGN = {
   },
 
   contact: {
-    address: "12 Campaign House, , Taraba State, Nigeria",
+    address: "12 Campaign House, Taraba State, Nigeria",
     phone: "+234 801 234 5678",
     email: "info@danjissforgovernor.ng",
-    whatsapp: "+2348012345678",
+    whatsapp: "+15556776550",
   },
 
   social: {
@@ -161,6 +161,13 @@ I have spent my career building hospitals, schools, and businesses. I know what 
 
   gallery: [
     {
+      id: 16,
+      type: "video",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/vid/VID-20260626-WA0145.mp4",
+      alt: "Short Documentary",
+      category: "Community",
+    },
+    {
       id: 1,
       src: "/images/gen/rally1.jpg",
       alt: "Community stakeholders meeting in Jalingo",
@@ -170,6 +177,13 @@ I have spent my career building hospitals, schools, and businesses. I know what 
       id: 2,
       src: "/images/gen/rally2.jpg",
       alt: "Consultations with grassroots community leaders",
+      category: "Community",
+    },
+    {
+      id: 17,
+      type: "video",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/vid/VID-20260626-WA0100.mp4",
+      alt: "Rally in Jalingo",
       category: "Community",
     },
     {
@@ -185,6 +199,13 @@ I have spent my career building hospitals, schools, and businesses. I know what 
       category: "Development",
     },
     {
+      id: 18,
+      type: "video",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/vid/VID-20260626-WA0117.mp4",
+      alt: "Supporters",
+      category: "Community",
+    },
+    {
       id: 5,
       src: "https://thenewspointer.com.ng/wp-content/uploads/2026/06/Polish_20260613_203405449-2048x1251.jpg",
       alt: "2027: Supporters Canvass Votes for Danji SS, Cite Transformation, Leadership Agenda in Taraba",
@@ -197,6 +218,13 @@ I have spent my career building hospitals, schools, and businesses. I know what 
       category: "Campaign",
     },
     {
+      id: 19,
+      type: "video",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/vid/VID-20260626-WA0125.mp4",
+      alt: "Massive supporter turnout",
+      category: "Community",
+    },
+    {
       id: 7,
       src: "/images/cert_of_return.png",
       alt: "Danji SS Receives certificate of return",
@@ -204,15 +232,58 @@ I have spent my career building hospitals, schools, and businesses. I know what 
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0023.jpg",
       alt: "Education summit",
-      category: "Education",
+      category: "Youth",
+    },
+    {
+      id: 20,
+      type: "video",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/vid/VID-20260626-WA0144.mp4",
+      alt: "Massive supporter turnout",
+      category: "Youth",
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?w=600&q=80",
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0053.jpg",
       alt: "Grassroots campaign",
-      category: "Campaign",
+      category: "Development",
+    },
+    {
+      id: 21,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0059.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
+    },
+    {
+      id: 11,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0060.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
+    },
+    {
+      id: 12,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0070.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
+    },
+    {
+      id: 13,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0084.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
+    },
+    {
+      id: 14,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0085.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
+    },
+    {
+      id: 15,
+      src: "https://xxjjjcoankzvrramasta.supabase.co/storage/v1/object/public/campaign-media/img/IMG-20260626-WA0086.jpg",
+      alt: "Grassroots campaign",
+      category: "Development",
     },
   ],
 
@@ -301,4 +372,12 @@ I have spent my career building hospitals, schools, and businesses. I know what 
         "As farmers, security is our biggest prayer. When Hon. Shiddi was the Chairman of the House Committee on Internal Security, he constantly pushed for better protection for our agrarian belts. He is not a politician who stays far away in Abuja; he understands our security challenges firsthand and has the professional tactical background needed to fix them.",
     },
   ],
+
+  // ============================================================
+  // FEATURE FLAGS — toggle features on/off without touching code
+  // ============================================================
+  features: {
+    // Set to true when WhatsApp bot is fully connected and tested
+    showWhatsApp: false,
+  },
 };
